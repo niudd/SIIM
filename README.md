@@ -1,4 +1,9 @@
+[65th on the final leaderboard](<https://www.kaggle.com/c/siim-acr-pneumothorax-segmentation/leaderboard>)
+
+
+
 ## Experiments
+
 - predict mask and classify zero-mask-nonzero-mask in one model training, worse❌
 - image size 512, gradient accumulation, sync batchnorm for small batch size(=8)...train a network on 512x512 for around 40 epochs.✅✅✅✅
 - 2-step-schema: classify zero-mask-nonzero-mask with all samples, then train mask model with all nonzero mask samples. first step not working, zero-nonzero-mask performance AUC score worse than unet mask model's sum-of-pixels
